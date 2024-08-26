@@ -5,23 +5,7 @@ import THC_Gehalt from "../Slider/Slider1";
 import CBD_Gehalt from "../Slider/Slider2";
 import Preis from "../Slider/Slider3";
 const Section = () => {
-  // State to manage individual checkboxes
-  const [checkboxes, setCheckboxes] = useState({
-    check1: false,
-    check2: false,
-    check3: true,
-    check4: true,
-    check5: false,
-  });
-
-  // Handle checkbox change
-  const handleCheckboxChange = (event: any) => {
-    const { id, checked } = event.target;
-    setCheckboxes((prevCheckboxes) => ({
-      ...prevCheckboxes,
-      [id]: checked,
-    }));
-  };
+ 
 
   return (
     <div className="w-[250px] mt-[70px] flex flex-col gap-5">
